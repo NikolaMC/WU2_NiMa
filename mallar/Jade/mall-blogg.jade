@@ -9,36 +9,108 @@ html(lang="sv")
     // Bootstrap CSS
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
     // My CSS
-    link(rel="stylesheet" href="mall.css")
+    link(rel="stylesheet" href="/mall.css")
   
   body
-    header
-      nav(class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark")
-        .container-fluid
-          .navbar-header
-            a(class="navbar-brand" href="#")
-          ul(class="nav navbar-nav")
-            li(class="nav-item")
-              a(class="nav-link" href="index.php") Home
-            li(class="nav-item")
-              a(class="nav-link" href="index.php?page=posts") Posts
-            li(class="nav-item")
-              a(class="nav-link" href="index.php?page=portfolio") Portfolio
-            li(class="nav-item")
-              a(class="nav-link" href="index.php?page=about") About
-          ul(class="nav navbar-nav navbar-right")
-            li
-              a(class="nav-link" href="#")
-                span(class="glyphicon glyphicon-user")  Sign up
-            li
-              a(class="nav-link" href="#")
-                span(class="glyphicon glyphicon-log-in")  Log in
-          
     .container
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
-    footer
-      p vsnkjcnavuoeijcohvuhosijdoeichuvrwhedijpoxajdisnvuilcjaouvneiajx
+      header
+        nav(class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark fixed-top")
+          // Logo
+          a(class="navbar-brand" href="#") Blogg
+          
+          // Hamburger
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent")
+            span(class="navbar-toggler-icon")
+              
+          // Responsive navbar
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul(class="navbar-nav m-auto")
+              li(class="nav-item mx-2")
+                a(class="nav-link" href="index.php") Home
+              li(class="nav-item mx-2")
+                a(class="nav-link" href="index.php?page=posts") Posts
+              li(class="nav-item mx-2")
+                a(class="nav-link" href="index.php?page=portfolio") Portfolio
+              li(class="nav-item mx-2")
+                a(class="nav-link" href="index.php?page=about") About
+            ul(class="nav navbar-nav navbar-right")
+              // Sign up button and icon
+              li(class="nav-item")
+                a(class="nav-link" href="#") Sign up 
+                  i(class="fas fa-user")
+              // Log in button and icon
+              li(class="nav-item")
+                a(class="nav-link" href="#") Log in 
+                  i(class="fas fa-sign-in-alt")
+            
+      .jumbotron.mt-5
+        h1 Newest post
+        p(class="lead") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        // Continue reading button
+        p(class="lead")
+          a(class="btn btn-dark btn-md" href="#" role="button") Continue reading
+          
+      // Cards
+      .row
+        .col-md-8
+          .card.mb-4
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+            
+          .card.mb-4
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+        
+          .card
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        // Sidebar
+        aside(class="col-md-4 blog-sidebar text-center text-md-left")
+          .p-3
+            h4(class="font-italic") Archives
+            ol(class="list-unstyled mb-0")
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") January 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") February 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") March 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") April 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") May 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") June 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") July 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") August 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") September 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") October 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") November 2018
+              li
+                a(href="#" class="btn btn-outline-dark" role="button") December 2018
+              
+    main(class="container" role="main")
+      .row
+        .col-md-8.blog-main
+          .blog-post
+            h3(class="blog-post-title")
+            p(class="blog-post-meta")
+        
+    footer(class="blog-footer")
+      p(class="text-center")
+        a(class="btn btn-outline-dark" role="button" href="#") Back to top
 
     // JQuery
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
@@ -46,3 +118,5 @@ html(lang="sv")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
     // Bootstrap JS
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    // Font Awesome
+    script(defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous")
