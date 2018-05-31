@@ -1,0 +1,182 @@
+//output:mall-blogg.html
+doctype html
+html(lang="sv")
+
+  head
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Blogg
+    // Bootstrap CSS
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+    // My CSS
+    link(rel="stylesheet" href="/mall.css")
+  
+  body
+    .container
+      header
+        nav(class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark fixed-top")
+          // Logo
+          a(class="navbar-brand" href="#") Blogg
+          
+          // Hamburger
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent")
+            span(class="navbar-toggler-icon")
+              
+          // Responsive navbar
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul(class="navbar-nav m-auto")
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Home/home.html") Home
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Posts/posts.html") Posts
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Portfolio/portfolio.html") Portfolio
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/About/about.html") About
+              ul(class="nav navbar-nav navbar-right")
+              // Sign up button and icon
+            ul(class="nav navbar-nav navbar-right")
+              li(class="nav-item")
+                a(class="nav-link" href="#") Sign up 
+                  i(class="fas fa-user")
+              // Log in button and icon
+              li(class="nav-item")
+                a(class="nav-link" href="#") Log in 
+                  i(class="fas fa-sign-in-alt")
+            
+      .jumbotron.mt-5.text-md-left.text-center
+        h1 Newest or highlight post
+        p(class="lead") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        // Continue reading button
+        p(class="lead")
+          a(class="btn btn-dark btn-md" href="#" role="button") Continue reading
+          
+      // Cards
+      .row
+        .col-md-8
+          .card.mb-4
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+            
+          .card.mb-4
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+        
+          .card
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        // Sidebar
+        aside(class="col-md-4 blog-sidebar text-center")
+          .p-3
+            h4(class="font-italic") Archives
+            ol(class="list-unstyled mb-0")
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") January 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") February 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") March 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") April 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") May 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") June 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") July 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") August 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") September 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") October 2018
+              li
+                a(href="#" class="btn btn-outline-dark mb-1" role="button") November 2018
+              li
+                a(href="#" class="btn btn-outline-dark" role="button") December 2018
+              
+    // Main
+    main(class="container" role="main")
+      .row
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="http://localhost/wu2_nima/Blogg/Jade/mall-post.html" class="btn btn-outline-dark" role="button") Read more
+              
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="http://www.hd-freewallpapers.com/latest-wallpapers/images-of-snakes.jpg" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+      .row
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+      .row
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="https://cdn.pixabay.com/photo/2017/05/09/21/49/gecko-2299365_960_720.jpg" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        .col-md-6.col-12.blog-main
+          .card.my-4
+            img(class="card-img-top" src="https://wallpaperbrowse.com/media/images/cat-1285634_960_720.png" alt="Card img")
+            .card-body.text-center
+              h5(class="card-title") Post title
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+        
+    footer(class="blog-footer bg-light py-3")
+      // Social media links
+      p(class="text-center")
+        a(href="#")
+          i(class="fab fa-twitter fa-2x mx-3")
+        a(href="#")
+          i(class="fab fa-facebook fa-2x mx-3")
+        a(href="#")  
+          i(class="fab fa-instagram fa-2x mx-3")
+        a(href="https://github.com/NikolaMC")
+          i(class="fab fa-github fa-2x mx-3")
+      // Back to top button
+      p(class="text-center")
+        a(class="btn btn-outline-dark" role="button" href="#") Back to top
+
+    // JavaScript
+
+    // JQuery
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    // Popper.js
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    // Bootstrap JS
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    // Font Awesome
+    script(defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous")

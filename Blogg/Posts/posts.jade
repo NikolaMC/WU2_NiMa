@@ -1,0 +1,108 @@
+//output:posts.html
+doctype html
+html(lang="sv")
+
+  head
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Blogg
+    // Bootstrap CSS
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+    // My CSS
+    link(rel="stylesheet" href="../mall.css")
+  
+  body
+    .container
+      header
+        nav(class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark fixed-top")
+          // Logo
+          a(class="navbar-brand" href="#") Blogg
+          
+          // Hamburger
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent")
+            span(class="navbar-toggler-icon")
+              
+          // Responsive navbar
+          .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul(class="navbar-nav m-auto")
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Home/home.html") Home
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Posts/posts.html") Posts
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/Portfolio/portfolio.html") Portfolio
+              li(class="nav-item mx-4")
+                a(class="nav-link" href="http://localhost/wu2_nima/Blogg/About/about.html") About
+            ul(class="nav navbar-nav navbar-right")
+              // Sign up button and icon
+              li(class="nav-item")
+                a(class="nav-link" href="#") Sign up 
+                  i(class="fas fa-user")
+              // Log in button and icon
+              li(class="nav-item")
+                a(class="nav-link" href="#") Log in 
+                  i(class="fas fa-sign-in-alt")
+
+    main(class="container" role="main")
+      .row
+        .col-12.blog-main
+          .card.my-4
+            .card-body
+              h5(class="card-title") New coding tricks
+              p(class="blog-post-meta") 25th April, 2018 by
+                a(href="#") User123
+              p(class="card-text") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        .col-12.blog-main
+          .card.my-4
+            .card-body
+              h5(class="card-title") JS beginner tips
+              p(class="blog-post-meta") 3rd April, 2018 by
+                a(href="#") User123
+              p(class="card-text") Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+             
+        .col-12.blog-main
+          .card.my-4
+            .card-body
+              h5(class="card-title") CSS tips
+              p(class="blog-post-meta") 16th March, 2018 by
+                a(href="#") User123
+              p(class="card-text") Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+              
+        .col-12.blog-main
+          .card.my-4
+            .card-body
+              h5(class="card-title") Get started with HTML
+              p(class="blog-post-meta") 10th March, 2018 by
+                a(href="#") User123
+              p(class="card-text") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+              a(href="#" class="btn btn-outline-dark" role="button") Read more
+
+    footer(class="blog-footer bg-light py-3")
+      // Social media links
+      p(class="text-center")
+        a(href="#")
+          i(class="fab fa-twitter fa-2x mx-3")
+        a(href="#")
+          i(class="fab fa-facebook fa-2x mx-3")
+        a(href="#")  
+          i(class="fab fa-instagram fa-2x mx-3")
+        a(href="https://github.com/NikolaMC")
+          i(class="fab fa-github fa-2x mx-3")
+      // Back to top button
+      p(class="text-center")
+        a(class="btn btn-outline-dark" role="button" href="#") Back to top
+
+    // JavaScript
+
+    // JQuery
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    // Popper.js
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    // Bootstrap JS
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    // Font Awesome
+    script(defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous")
